@@ -1,0 +1,26 @@
+.users-form-wrapper{
+    padding: 10px;
+    max-width: 768px;
+    margin: 0;
+    .card-header{
+        h3{
+            margin: 0;
+        }
+    }
+    .active-check-wrapper{
+        .form-check-input{
+            width: 20px;
+            height: 20px;
+        }
+        span{
+            font-weight: normal;
+            margin: 1px 0 0 5px;
+        }
+    }
+    .card-footer{
+        .cancel-btn{
+            color: #fff;
+            margin: 0 10px 0 0;
+        }
+    }
+}

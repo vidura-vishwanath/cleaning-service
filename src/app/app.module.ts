@@ -7,21 +7,27 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProviderComponent } from './provider/provider.component';
 import { ServicesComponent } from './services/services.component';
+import { UsersComponent } from './users/users.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     ProviderComponent,
-    ServicesComponent
+    ServicesComponent,
+    UsersComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
+      { path: '', component: LoginComponent },
       { path: 'dashboard', component: DashboardComponent },
       { path: 'provider', component: ProviderComponent },
-      { path: 'services', component: ServicesComponent }
+      { path: 'services', component: ServicesComponent },
+      { path: 'users', component: UsersComponent }
     ])
   ],
   providers: [],
