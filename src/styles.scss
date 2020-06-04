@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+$brightBlue:#007bff;
+$brightYellow:#ffc107;
+$brightGreen:#28a745;
+$brightRed:#dc3545;
+$dullRed:#b21f2d;
+$dullBlue:#17a2b8;
+$grey:#6c757d;
+
+.bg_blue-bright{
+    background:$brightBlue !important;
+}
+.bg_blue-dull{
+    background:$dullBlue !important;
+}
+.bg-grey{
+    background:$grey !important;
+}
+
+
+.clear-a::after{
+    clear: both;
+    content: "";
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.float-l{
+    float: left;
+}
+.float-r{
+    float: right;
+}
